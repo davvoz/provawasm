@@ -9,12 +9,16 @@ import { WasmService } from 'src/services/wasm.service';
 export class AppComponent {
   title = 0;
   a:any;
-  constructor(private wasmService : WasmService){
-    this.a = wasmService.fibonacci(27).subscribe(
+  fattore = 0;
+  constructor(public wasmService : WasmService){
+    
+  
+  }
+  async fibonacci(){
+    this.a = this.wasmService.fibonacci(this.fattore).subscribe(
       val=>{
        this.title = val;
       }
     );
-  
   }
 }
