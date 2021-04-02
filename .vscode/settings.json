@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "emscripten.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
